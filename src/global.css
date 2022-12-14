@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px 10%;
+}
+.search-field {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.search-field input {
+  width: 30%;
+  padding: 10px;
+  outline: none;
+}
+
+.search-field button {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid black;
+}
+.search-result {
+  width: 100%;
+  padding: 10px;
+}
+
+.search-result h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border:2px solid blue ;
+  border-bottom: none;
+  transform: rotate(360deg);
+  animation: spin .4s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
