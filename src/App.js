@@ -57,7 +57,7 @@ function App() {
                     </a>
                     <p>{item.description}</p>
                   </div>
-                  <img width={100} height={100} src={item.urlToImage} alt="news image" />
+                  <img width={100} height={100} src={item.urlToImage} alt="news info." />
                 </div>
               </div>
             );
