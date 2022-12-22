@@ -55,7 +55,7 @@ code {
 .loading {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -66,10 +66,10 @@ code {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border:2px solid blue ;
+  border: 2px solid blue;
   border-bottom: none;
   transform: rotate(360deg);
-  animation: spin .4s infinite;
+  animation: spin 0.4s infinite;
 }
 
 @keyframes spin {
@@ -79,4 +79,35 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+.topNews {
+  border-bottom: 2px solid red;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.topHeadlines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.countries {
+  display: flex;
+  gap: 10px;
+}
+.country {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.country:hover{
+  opacity: 0.6;
 }
